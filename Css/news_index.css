@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (min-width: 621px){
+.fa-bars {
+	margin-left: 30%;
+	font-size: 50px;
+	color: black;
+}
+
+.border_container {
+	border: 2px solid;
+	border-radius: 20px;
+	margin-left: 45%;
+	margin-right: 35%;
+	background-color: #EA7034;
+	position: absolute;
+}
+
+
+.img {
+	object-fit: cover;
+	width: 195%;
+	top: -60%;
+	left: -45%;
+	overflow: hidden;
+	position: absolute;
+	
+}
+
+	
+}

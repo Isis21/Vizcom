@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vizcom</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link href="Css/Vizcom_index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="outer">
+			<div class="nav">
+				<a href="javascript:void(0)" class="icon_nav" onClick="myFunction()">
+					<i class="fa fa-bars"></i></a>
+				<div id="links">
+					<a href="Vizcom.html" class= "active">Home</a>
+				</div>
+				<img class="title" src="Pics/vizCOM_logo_color.png">
+			</div>
+		</div>
+		<div class="inner">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<div class="numbertext">1/3</div>
+					<img src="Pics/Tech Glasses Techken.jpg" style=" display: block; margin: 0 auto; width: 49%">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">2/3</div>
+					<img src="Pics/Moverio.jpg" style="display: block; margin: 0 auto; width: 44%">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">3/3</div>
+					<img src="Pics/bram-van-oost-UUNzBJLXsAY-unsplash.jpg" style="display: block; margin: 0 auto; width: 45%">
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			<div style="text-align: center">
+				<span class="dot" onClick="currentSlide(1)"></span>
+				<span class="dot" onClick="currentSlide(2)"></span>
+				<span class="dot" onClick="currentSlide(3)"></span>
+			</div>
+			<div class="news">
+				<h1>About The Company</h1>
+				<p>We at Vizcom have two goals, provide an excellent product at an great price. We serve your everyday hobbist to your tech mogule at a fortune 500 company. We sell tech glasses, which are our most popular products, Cameras and in home security systems, computers and AI controlled cars. We are even putting a bid in for a new space shuttle project that will give your average joe and jane the opportunity to go into space.</p>
+				<select>
+					<option>Social Media</option>
+					<option>Facebook</option>
+					<option>Twitter</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<script>
+		function(){
+			
+		}
+		var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+} 
+		function myFunction(){
+			var x =document.getElementById("links");
+			if (x.style.display === "block"){
+				x.style.display = "none";
+			}else{
+				x.style.display = "block";
+			}
+		}
+	</script>
+</body>
+</html>
